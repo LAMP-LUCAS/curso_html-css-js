@@ -3,12 +3,12 @@
 <html lang="pt-br">
 
 <head>
-	<meta charset="UTF-8">
+	<meta Content-Type="text/html" charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Login-Helper</title>
 
 	<link href="./css/styles.css" rel="stylesheet" />
-	<script src="./js/index.js" asinc></script>
+	<script src="./js/index.js" defer></script>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,9 +28,9 @@
 			<input type="email" placeholder="example@gmail.com">
 
 			<div class="password-container">
-			<input type="password" id="field-password" class="field-password" placeholder="******">
-			<i class="fa-solid fa-eye" id="eye" ></i>
-			<i class="fa-solid fa-eye-slash" id="eye-slash" ></i>
+			<input type="password" id="field-password" class="field-password" placeholder="Digite sua senha...">
+			<i class="fa-solid fa-eye" id="eye" onclick="showPassword()"></i>
+			<i class="fa-solid fa-eye-slash" id="eye-slash" onclick="showPassword()"></i>
 			</div>
 
 		</section>
@@ -38,7 +38,7 @@
 		<section class="password-infos">
 
 			<div>
-			<input type="checkbox">
+			<input type="checkbox" id="lembrar" aria-labelledby="l1">
 			<span>Lembrar senha?</span>
 			</div>
 
