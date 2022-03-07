@@ -2,7 +2,7 @@
 
 <html lang="pt-br">
 	<head>
-		<meta charset="UTF-8">
+		<meta Content-Type: "text/html" charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<title>Star-Devs</title>
@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="./css/styles.css">
 
 		<!-- JS --!>
-		<script src="./js/index.js"></script>
+		<script src="./js/index.js" defer></script>
 		
 		<!-- fonts --!>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,7 +51,7 @@
 		</section>
 		
 		<section class="phrases-container">
-			<button id="btn-phrases">Ler uma Frase!</button>
+			<button id="btn-phrases" onclick="loadPhrase()">Ler uma Frase!</button>
 			<p id="phrase"></p>
 		</section>
 
